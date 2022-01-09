@@ -1,45 +1,44 @@
 #include <iostream>
-#include<limits>
+#include <limits>
 using namespace std;
 
 int main()
 {
         int t;
-        cin>>t;
+        cin >> t;
         while (t--)
         {
-                int n,m;
-                cin>>n>>m;
-                int max=0,min=0;
-                int DiffValue=0;
+                int n, m;
+                cin >> n >> m;
+                int max = 0, min = 0;
+                int DiffValue = 0;
                 for (int i = 0; i < n; i++)
                 {
-                        max=std::numeric_limits<int>::min();
-                        min=std::numeric_limits<int>::max();
+                        max = std::numeric_limits<int>::min();
+                        min = std::numeric_limits<int>::max();
 
                         for (int j = 0; j < m; j++)
                         {
                                 int a;
-                                cin>>a;
-                                if (a>max)
+                                cin >> a;
+                                if (a > max)
                                 {
-                                        max=a;
+                                        max = a;
                                 }
-                                if (a<min)
+                                if (a < min)
                                 {
-                                        min=a;
+                                        min = a;
                                 }
                         }
 
-                        if ((max-min)>DiffValue)
+                        if ((max - min) > DiffValue)
                         {
-                             DiffValue=max-min;
+                                DiffValue = max - min;
                         }
-                        
                 }
-                
-                cout<<DiffValue<<endl;
+
+                cout << DiffValue << endl;
         }
-        
+
         return 0;
 }

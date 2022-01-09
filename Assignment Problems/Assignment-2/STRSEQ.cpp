@@ -3,24 +3,25 @@ using namespace std;
 
 bool increasing (int a[],int n)
 {
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n-1; i++)
         {
                 if (a[i]>a[i+1])
                 {
                         return false;
                 }
+               
                 
         }
         return true;
         
-}
+}       
 bool decreasing (int a[],int n)
 {
-         for (int i = 0; i < n; i++)
+         for (int i = 0; i < n-1; i++)
         {
                 if (a[i]<a[i+1])
                 {
-                        return false;
+                        return false;                                   
                 }
                 
         }
