@@ -10,7 +10,7 @@ int main()
         while (t--)
         {
                 int n;
-                cin >> n;
+                cin >> n;       
                 int m;
                 cin >> m;
                 int count_t[m];
